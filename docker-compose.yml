@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  openstack:
+    build: .
+    container_name: openbox
+    volumes:
+      - ./source/:/usr/share/source
+    networks:
+      - os
+    stdin_open: true
+    tty: true
+
+networks:
+  os:
+    driver: bridge
