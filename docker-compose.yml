@@ -1,8 +1,8 @@
 version: '2'
 
 services:
-  openstack:
-    build: .
+  openbox:
+    image: jseguillon/openbox
     container_name: openbox
     volumes:
       - ./source/:/usr/share/source
