@@ -2,7 +2,7 @@ version: '2'
 
 services:
   openbox:
-    image: jseguillon/openbox
+    image: jseguillon/openbox:alpine
     container_name: openbox
     volumes:
       - ./source/:/usr/share/source
