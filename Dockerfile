@@ -12,8 +12,8 @@ RUN pip install --upgrade --no-cache-dir setuptools openstacksdk python-openstac
 
 # terraform
 RUN yum -y install unzip; yum clean all
-RUN curl https://releases.hashicorp.com/terraform/0.10.6/terraform_0.10.6_linux_amd64.zip > terraform_0.10.6_linux_amd64.zip
-RUN unzip terraform_0.10.6_linux_amd64.zip
+RUN curl https://releases.hashicorp.com/terraform/0.11.0/terraform_0.11.0_linux_amd64.zip > terraform_0.11.0_linux_amd64.zip
+RUN unzip terraform_0.11.0_linux_amd64.zip
 RUN mv terraform /usr/bin/
 
 # composer
